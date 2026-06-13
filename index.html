@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anes Amrouni — Full-Stack & Backend Developer</title>
+  <meta name="description" content="Anes Amrouni · Computer Science student & full-stack developer. APIs, mobile apps, IoT, cybersecurity and cloud computing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="skills-wall.css" />
+</head>
+<body>
+
+  <!-- AMBIENT BLUE LIGHT -->
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="wrap">
+      <a href="#top" class="brand"><span class="mark">AA</span> Anes&nbsp;Amrouni</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="#" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Resume
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <button class="nav-burger" id="burger" aria-label="Menu"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <span id="top"></span>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="hero-status reveal"><span class="dot"></span> Open to internships &amp; junior roles · 2026</span>
+        <h1 class="reveal reveal-d1">Backend developer<br>building <span class="accent">reliable systems.</span></h1>
+        <div class="hero-role reveal reveal-d2"><span class="bar"></span> Computer Science Student · Full-Stack & Backend Developer</div>
+        <p class="lede reveal reveal-d2">I'm Anes Amrouni — a Computer Science student at USTHB who loves building things that actually work. I focus on backend development but I'm comfortable across the stack — from Node.js APIs and PostgreSQL to Flutter apps and React dashboards.</p>
+        <div class="hero-cta reveal reveal-d3">
+          <a class="btn btn-primary" href="#projects">View my work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-tags reveal reveal-d4">
+          <span>TypeScript</span><span>Node.js</span><span>PostgreSQL</span><span>React</span><span>Flutter</span><span>Docker</span>
+        </div>
+      </div>
+      <div class="hero-portrait reveal reveal-d2">
+        <div class="portrait-frame">
+          <img src="images/portfolio-pic2.png" alt="Anes Amrouni" style="width:100%;height:100%;object-fit:cover;object-position:center 35%;" />
+          <div class="hero-badge">
+            <span class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </span>
+            <span><b>Full-Stack &amp; Backend</b><small>Node.js · TypeScript · PostgreSQL</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-body">
+          <span class="eyebrow reveal">About me</span>
+          <h2 class="reveal reveal-d1" style="font-family:var(--font-display);font-weight:600;font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.08;letter-spacing:-0.02em;margin-top:var(--s-3);">I turn ideas into solid, well-structured backends.</h2>
+          <div class="reveal reveal-d2" style="margin-top:var(--s-5);">
+            <p>I'm a <strong>Computer Science student at USTHB</strong> and a backend-focused developer who enjoys the parts of software others find tricky — data modelling, API design, authentication and system architecture. I care about clean code, scalable design and systems that hold up under real load.</p>
+            <p>My interests span <strong>software engineering, IoT, databases and cloud computing</strong>. I've sharpened these through academic projects, personal builds and <strong>hackathons</strong> — where I like owning the server side end-to-end.</p>
+          </div>
+          <div class="info-list reveal reveal-d3">
+            <div class="row"><span class="k">Focus</span><span class="v">Backend · APIs · Databases</span></div>
+            <div class="row"><span class="k">Based in</span><span class="v">Algiers, Algeria · Available remotely &amp; on-site</span></div>
+            <div class="row"><span class="k">Interests</span><span class="v">IoT · Cybersecurity · Big Data · Cloud</span></div>
+            <div class="row"><span class="k">Status</span><span class="v">Seeking 2026 internship / junior role</span></div>
+          </div>
+        </div>
+        <div class="stats reveal reveal-d2">
+          <div class="stat"><div class="num">6+</div><div class="lbl">Projects built</div></div>
+          <div class="stat"><div class="num">3</div><div class="lbl">Hackathons joined</div></div>
+          <div class="stat"><div class="num">5+</div><div class="lbl">Core technologies</div></div>
+          <div class="stat"><div class="num">∞</div><div class="lbl">Curiosity for systems</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills" style="background:var(--bg-2);">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow reveal">Skills</span>
+        <h2 class="reveal reveal-d1">Tools I build with</h2>
+        <p class="reveal reveal-d2">A backend-leaning toolkit — drag across the wall to bring any skill into focus.</p>
+      </div>
+    </div>
+    <div class="wall-stage reveal" id="skillsWall" aria-label="Skills wall — drag to explore">
+      <div class="wall-vignette"></div>
+      <div class="wall" id="wallInner"></div>
+      <div class="wall-hint" id="wallHint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M18 11V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v0M14 10V4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v2M10 10.5V6a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg>
+        Drag to explore
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="wall-legend reveal">
+        <span class="lg"><span class="sw" style="--lg-c:oklch(0.62 0.15 262);"></span>Languages</span>
+        <span class="lg"><span class="sw" style="--lg-c:oklch(0.62 0.15 215);"></span>Frameworks &amp; Libraries</span>
+        <span class="lg"><span class="sw" style="--lg-c:oklch(0.62 0.15 158);"></span>Databases</span>
+        <span class="lg"><span class="sw" style="--lg-c:oklch(0.62 0.15 300);"></span>Tools</span>
+        <span class="lg"><span class="sw" style="--lg-c:oklch(0.62 0.15 40);"></span>Other</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow reveal">Projects</span>
+        <h2 class="reveal reveal-d1">Selected work</h2>
+      </div>
+      <div class="proj-grid" id="projGrid">
+
+        <article class="proj-card reveal">
+          <div class="proj-media"><span class="proj-num">01</span><span class="proj-feat">Featured</span><img src="images/project1.png" alt="WeBuy — Smart Supermarket Platform" style="width:100%;height:100%;object-fit:cover;" /></div>
+          <div class="proj-body">
+            <h3>WeBuy — Smart Supermarket Platform</h3>
+            <p>A full-stack IoT-powered supermarket system that eliminates checkout queues. Smart carts with RFID &amp; weight sensors scan products automatically, update a running total in real time, and let customers check out with a single payment tap. Three interfaces from one codebase: customer mobile app, manager dashboard, and cart kiosk.</p>
+            <div class="proj-stack">
+              <span class="badge">Flutter</span>
+              <span class="badge">React 19</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">ESP32 / MQTT</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Socket.IO</span>
+              <span class="badge">FastAPI</span>
+              <span class="badge">LightGBM</span>
+              <span class="badge">Stripe</span>
+              <span class="badge">Firebase</span>
+            </div>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="#">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary" href="#">Live demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal reveal-d1">
+          <div class="proj-media"><span class="proj-num">02</span><img src="images/project2.png" alt="Multi-tenant WhatsApp AI SaaS Backend" style="width:100%;height:100%;object-fit:cover;" /></div>
+          <div class="proj-body">
+            <h3>WhatsApp AI SaaS Backend</h3>
+            <p>A production-ready multi-tenant SaaS backend that connects any WhatsApp number to a Google Gemini AI assistant with automated appointment booking. Each business gets an isolated WhatsApp session, custom AI personality, and booking flow — all managed through a React admin dashboard.</p>
+            <div class="proj-stack">
+              <span class="badge">Node.js</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Express</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">Prisma</span>
+              <span class="badge">Redis</span>
+              <span class="badge">BullMQ</span>
+              <span class="badge">Gemini API</span>
+              <span class="badge">Baileys</span>
+              <span class="badge">Docker</span>
+            </div>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="https://github.com/blluesweater/whatsapp-ai-saas" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary" href="#">Live demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal reveal-d2">
+          <div class="proj-media"><span class="proj-num">03</span><img src="images/project3.png" alt="CI/CD Microservice Starter" style="width:100%;height:100%;object-fit:cover;" /></div>
+          <div class="proj-body">
+            <h3>CI/CD Microservice Starter</h3>
+            <p>A production-ready REST API with a complete CI/CD pipeline built from scratch. Automated tests with Jest &amp; Supertest, multi-stage Docker build, and GitHub Actions configured to run tests and deploy to Railway on every push — if any test fails, deployment is blocked.</p>
+            <div class="proj-stack">
+              <span class="badge">Node.js</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Express</span>
+              <span class="badge">Jest</span>
+              <span class="badge">Supertest</span>
+              <span class="badge">Docker</span>
+              <span class="badge">GitHub Actions</span>
+              <span class="badge">Railway</span>
+            </div>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="https://github.com/blluesweater/cicd-microservice-starter" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary" href="#">Live demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-media"><span class="proj-num">04</span><img src="images/project4.png" alt="Smart Automated Backup & Sync Engine" style="width:100%;height:100%;object-fit:cover;" /></div>
+          <div class="proj-body">
+            <h3>Smart Backup &amp; Sync Engine</h3>
+            <p>A production-grade CLI tool that watches a folder for changes and backs files up to local disk or AWS S3 — compressed with gzip and encrypted with AES-256-GCM. Jobs run through a BullMQ/Redis queue with auto-retry; a cron scheduler runs full sweeps as a safety net. Built around a pluggable StorageAdapter interface so swapping backends requires zero core changes.</p>
+            <div class="proj-stack">
+              <span class="badge">TypeScript</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">AWS S3</span>
+              <span class="badge">BullMQ</span>
+              <span class="badge">Redis</span>
+              <span class="badge">chokidar</span>
+              <span class="badge">AES-256-GCM</span>
+              <span class="badge">node-cron</span>
+              <span class="badge">Winston</span>
+              <span class="badge">Jest</span>
+            </div>
+            <div class="proj-actions">
+              <a class="btn btn-ghost" href="https://github.com/blluesweater/smart-backup-engine" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+                Code
+              </a>
+              <a class="btn btn-primary" href="#">Live demo<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card reveal reveal-d1" style="opacity:0.6;">
+          <div class="proj-media" style="display:grid;place-items:center;background:var(--surface-2);aspect-ratio:16/10;">
+            <span class="proj-num">05</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="proj-body" style="align-items:center;justify-content:center;text-align:center;flex:1;display:flex;flex-direction:column;gap:var(--s-3);padding:var(--s-7) var(--s-5);">
+            <h3 style="color:var(--muted);">Coming Soon</h3>
+            <p style="color:var(--muted);font-size:0.9rem;">Next project in progress.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE + EDUCATION -->
+  <section class="section" id="experience" style="background:var(--bg-2);">
+    <div class="wrap">
+      <div class="two-col">
+        <div>
+          <div class="section-head" style="margin-bottom:var(--s-6);">
+            <span class="eyebrow reveal">Experience</span>
+            <h2 class="reveal reveal-d1">Where I've worked</h2>
+          </div>
+          <div class="timeline">
+            <div class="t-item reveal">
+              <div class="date">2024</div>
+              <h3>Hackathon Participant</h3>
+              <div class="org">Micro Club USTHB &amp; Dev Up Club</div>
+              <p>Owned the backend on two hackathon teams — rapid API design, integrations and demos under tight deadlines. Finished top 5 in both competitions.</p>
+              <div class="tags"><span class="badge">Node.js</span><span class="badge">PostgreSQL</span><span class="badge">REST APIs</span></div>
+            </div>
+          </div>
+        </div>
+        <div id="education">
+          <div class="section-head" style="margin-bottom:var(--s-6);">
+            <span class="eyebrow reveal">Education</span>
+            <h2 class="reveal reveal-d1">What I'm studying</h2>
+          </div>
+          <div class="timeline">
+            <div class="t-item reveal">
+              <div class="date">2022 — Present</div>
+              <h3>BSc Computer Science</h3>
+              <div class="org">USTHB · Algiers, Algeria</div>
+              <p>Core CS coursework: algorithms, data structures, operating systems, databases, networks and software engineering.</p>
+              <div class="tags"><span class="badge">Algorithms</span><span class="badge">Databases</span><span class="badge">Networks</span></div>
+            </div>
+            <div class="t-item reveal reveal-d1">
+              <div class="date">2024 — Present</div>
+              <h3>Self-directed Learning</h3>
+              <div class="org">Online · ongoing</div>
+              <p>Continuously building skills in cloud computing, big data and cybersecurity through courses and hands-on projects.</p>
+              <div class="tags"><span class="badge">Cloud</span><span class="badge">Big Data</span><span class="badge">Cybersecurity</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-intro">
+          <span class="eyebrow reveal">Contact</span>
+          <h2 class="reveal reveal-d1">Let's build something solid together.</h2>
+          <p class="reveal reveal-d2">I'm open to internships, junior backend roles and interesting collaborations. Drop a message and I'll reply quickly.</p>
+          <div class="contact-links reveal reveal-d3">
+            <a class="contact-link" href="mailto:amrounianes@gmail.com" target="_blank" rel="noopener">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+              <span><b>Email</b><small>amrounianes@gmail.com</small></span>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/anes-amrouni-180b43295/" target="_blank" rel="noopener">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7.1 20.5H3.6V9h3.5v11.5zM5.3 7.4c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20.5 20.5H17v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.6V9H13v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3v6.4z"/></svg></span>
+              <span><b>LinkedIn</b><small>linkedin.com/in/anes-amrouni</small></span>
+            </a>
+            <a class="contact-link" href="https://github.com/blluesweater" target="_blank" rel="noopener">
+              <span class="ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></span>
+              <span><b>GitHub</b><small>github.com/blluesweater</small></span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <form class="form" id="contactForm" action="https://formspree.io/f/mojzpygq" method="POST">
+            <div class="field"><label for="cf-name">Name</label><input id="cf-name" type="text" name="name" placeholder="Your name" required /></div>
+            <div class="field"><label for="cf-email">Email</label><input id="cf-email" type="email" name="email" placeholder="you@company.com" required /></div>
+            <div class="field"><label for="cf-msg">Message</label><textarea id="cf-msg" name="message" placeholder="Tell me about the role or project…" required></textarea></div>
+            <button class="btn btn-primary" type="submit">Send message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out — I'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <a href="#top" class="brand"><span class="mark">AA</span> Anes&nbsp;Amrouni</a>
+      <div class="socials">
+        <a href="https://github.com/blluesweater" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        <a href="https://www.linkedin.com/in/anes-amrouni-180b43295/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14C2.2 0 0 2.2 0 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5V5c0-2.8-2.2-5-5-5zM7.1 20.5H3.6V9h3.5v11.5zM5.3 7.4c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20.5 20.5H17v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.6V9H13v1.6h.1c.5-.9 1.6-1.8 3.3-1.8 3.5 0 4.1 2.3 4.1 5.3v6.4z"/></svg></a>
+        <a href="mailto:amrounianes@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></a>
+      </div>
+      <p class="copy">© <span id="year">2026</span> Anes Amrouni · Built with care</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+  <script src="skills-wall.js"></script>
+</body>
+</html>

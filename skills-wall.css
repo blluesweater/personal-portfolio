@@ -1,0 +1,89 @@
+/* =========================================================
+   Skills Wall styles
+   ========================================================= */
+.wall-stage {
+  position: relative;
+  width: 100%;
+  height: clamp(440px, 62vh, 640px);
+  margin-top: var(--s-6);
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-mask-image: radial-gradient(ellipse 72% 78% at 50% 50%, #000 38%, transparent 92%);
+  mask-image: radial-gradient(ellipse 72% 78% at 50% 50%, #000 38%, transparent 92%);
+}
+.wall-stage.grabbing { cursor: grabbing; }
+
+.wall-vignette {
+  position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(circle 240px at 50% 50%, var(--accent-soft), transparent 70%);
+}
+
+.wall { position: absolute; inset: 0; z-index: 1; }
+
+.wall-tile {
+  position: absolute; left: 50%; top: 50%;
+  width: 124px; height: 124px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-sm);
+  will-change: transform, opacity;
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease), background-color 0.3s var(--ease);
+  opacity: 0;
+}
+.wall-tile.focus { border-color: var(--tile-accent, var(--accent)); box-shadow: var(--shadow-md); }
+.wall-tile .wt-ico {
+  width: 46px; height: 46px; border-radius: 13px; flex: none;
+  display: grid; place-items: center;
+  color: var(--tile-accent, var(--accent));
+  background: color-mix(in srgb, var(--tile-accent, var(--accent)) 12%, transparent);
+}
+.wall-tile .wt-ico svg { width: 24px; height: 24px; }
+.wall-tile .wt-name {
+  font-family: var(--font-display); font-weight: 600; font-size: 0.92rem;
+  letter-spacing: -0.01em; color: var(--text); text-align: center; line-height: 1.15;
+  padding-inline: 8px;
+}
+
+.cat-code   { --tile-accent: oklch(0.62 0.15 262); }
+.cat-server { --tile-accent: oklch(0.62 0.15 215); }
+.cat-data   { --tile-accent: oklch(0.62 0.15 158); }
+.cat-cloud  { --tile-accent: oklch(0.62 0.15 300); }
+.cat-shield { --tile-accent: oklch(0.62 0.15 40);  }
+[data-theme="dark"] .cat-code   { --tile-accent: oklch(0.72 0.14 262); }
+[data-theme="dark"] .cat-server { --tile-accent: oklch(0.72 0.14 215); }
+[data-theme="dark"] .cat-data   { --tile-accent: oklch(0.72 0.14 158); }
+[data-theme="dark"] .cat-cloud  { --tile-accent: oklch(0.72 0.14 300); }
+[data-theme="dark"] .cat-shield { --tile-accent: oklch(0.72 0.14 40);  }
+
+.wall-hint {
+  position: absolute; z-index: 5; left: 50%; bottom: 22px; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.04em;
+  color: var(--text-2); background: color-mix(in srgb, var(--surface) 82%, transparent);
+  border: 1px solid var(--border); border-radius: 100px; padding: 8px 16px;
+  box-shadow: var(--shadow-sm); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  pointer-events: none;
+  animation: wallHintFloat 2.6s var(--ease) infinite;
+  transition: opacity 0.4s var(--ease);
+}
+.wall-stage.touched .wall-hint { opacity: 0; }
+@keyframes wallHintFloat {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(-5px); }
+}
+
+.wall-legend {
+  display: flex; flex-wrap: wrap; gap: var(--s-4) var(--s-5);
+  justify-content: center; margin-top: var(--s-6);
+}
+.wall-legend .lg {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 0.84rem; color: var(--text-2); font-weight: 500;
+}
+.wall-legend .lg .sw { width: 11px; height: 11px; border-radius: 4px; background: var(--lg-c, var(--accent)); }
